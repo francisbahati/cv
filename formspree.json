@@ -1,0 +1,114 @@
+{
+  "forms": {
+    "newsletter": {
+      "id": "xkgqorzp",
+      "name": "Newsletter Subscription",
+      "description": "Footer newsletter subscription form",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true,
+          "label": "Email Address"
+        }
+      },
+      "actions": [
+        {
+          "type": "autoresponse",
+          "fromName": "GURU Business Consultancy",
+          "subject": "Welcome to our newsletter!",
+          "message": "Thank you for subscribing to our newsletter! You'll now receive updates on our latest news and offers."
+        }
+      ],
+      "successMessage": "Thank you for subscribing!"
+    
+    },
+    "consultation": {
+      "id": "meoreglk",
+      "name": "Consultation Request",
+      "description": "Service consultation form for sales training",
+      "fields": {
+        "name": {
+          "type": "text",
+          "required": true,
+          "label": "Full Name"
+        },
+        "email": {
+          "type": "email",
+          "required": true,
+          "label": "Email Address"
+        },
+        "phone": {
+          "type": "number",
+          "required": true,
+          "label": "Your Phone"
+        },
+        "subject": {
+          "type": "hidden",
+          "value": "Corporate Sales Excellence Program Consultation",
+          "label": "Subject"
+        },
+        "message": {
+          "type": "textarea",
+          "required": true,
+          "label": "Message"
+        }
+      },
+      "actions": [
+        {
+          "type": "autoresponse",
+          "fromName": "GURU Business Consultancy",
+          "subject": "We received your consultation request",
+          "message": "Thank you for your interest in our Corporate Sales Excellence Program! We've received your consultation request and will contact you within 24 hours to discuss your organization's specific needs and goals."
+        }
+      ],
+      "successMessage": "Your consultation request has been sent. We'll contact you within 24 hours!"
+      
+    },
+    "contact": {
+      "id": "xzzjdqwz",
+      "name": "Contact Form",
+      "description": "Main contact form for business inquiries",
+      "fields": {
+        "name": {
+          "type": "text",
+          "required": true,
+          "label": "Your Name"
+        },
+        "email": {
+          "type": "email",
+          "required": true,
+          "label": "Your Email"
+        },
+        "phone": {
+          "type": "number",
+          "required": true,
+          "label": "Your Phone"
+        },
+        "subject": {
+          "type": "text",
+          "required": true,
+          "label": "Subject"
+        },
+        "message": {
+          "type": "textarea",
+          "required": true,
+          "label": "Message"
+        }
+      },
+      "actions": [
+        {
+          "type": "autoresponse",
+          "fromName": "GURU Business Consultancy",
+          "subject": "We received your message",
+          "message": "Thank you for contacting us! We've received your message and will respond within 24 hours. We're looking forward to helping transform your business."
+        }
+      ],
+      "successMessage": "Your message has been sent. Thank you! We'll respond within 24 hours."
+  
+    }
+  },
+  "settings": {
+    "project": "guru",
+    "version": "1.0.0"
+  }
+}
